@@ -1,0 +1,165 @@
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 100%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team1,
+  #contact,
+  #footer {
+    width: 100%;
+  }
+
+  #portfolio {
+    width: 100%;
+  }
+}
+
+.text-justify { 
+  text-align: justify;
+  color: white;
+  font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.video-frame {
+  width: 550px;
+  height: 400px;
+}
+
+.thumbnail {
+  border: 1px solid #cccccc00; /* ขอบสีเทาจาง */
+  border-radius: 5px; /* ทำให้ขอบโค้งเล็กน้อย */
+  padding: 5px; /* เพิ่มระยะห่างด้านใน */
+}
+
+.countdown__container {
+  display: flex;
+  flex-direction: row; /* เปลี่ยนจาก column เป็น row เพื่อจัดให้เป็นแนวนอน */
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  text-align: center;
+  margin-top: 2rem; /* เพิ่มระยะห่างจากข้างบน */
+  gap: 20px; /* ระยะห่างระหว่างแต่ละ card */
+}
+
+.countdown__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #030003;
+  margin-bottom: 1rem; /* เพิ่มระยะห่างระหว่างข้อความกับ countdown */
+}
+
+.countdown__wrapper {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+  align-items: center;
+  gap: 20px; /* ระยะห่างระหว่างแต่ละ block */
+}
+
+.countdown__card {
+  flex: 1;
+  width: 100%;
+  max-width: 120px;
+  text-align: center;
+}
+
+.countdown__card__bg {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  aspect-ratio: 120 / 120;
+  background-color: #f0e8ec7e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.countdown__card__number {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(36px, 2vw, 64px);
+  font-weight: bold;
+  color: #030003;
+  line-height: 1;
+}
+
+.countdown__card__label {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  text-transform: uppercase;
+  color: #0c0109;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .countdown__wrapper {
+    flex-wrap: wrap; /* ให้ stack ในจอเล็ก */
+    gap: 15px;
+  }
+
+  .countdown__card {
+    max-width: 150px;
+  }
+
+  .countdown__card__number {
+    font-size: clamp(28px, 4vw, 48px);
+  }
+
+  .countdown__card__label {
+    font-size: clamp(10px, 1.5vw, 14px);
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown__wrapper {
+    flex-direction: column; /* Stack Countdown ในแนวตั้ง */
+  }
+
+  .countdown__card {
+    max-width: 120px;
+  }
+
+  .countdown__card__number {
+    font-size: clamp(24px, 3.5vw, 40px);
+  }
+
+  .countdown__card__label {
+    font-size: clamp(8px, 1.2vw, 12px);
+  }
+}
+
+.conference-title {
+  font-size: 3em; /* ขยายขนาดฟอนต์ 3 เท่า */
+  font-weight: bold; /* ทำให้ตัวอักษรหนาขึ้น */
+  text-align: center; /* จัดให้อยู่กึ่งกลาง */
+  margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+  color: #333; /* ปรับสีให้ชัดขึ้น */
+}
+
+.team-img {
+  /*width: 50%;  /* ปรับให้รูปเต็มขนาดของ card */
+  /*height: 10%; /* ให้ความสูงเท่ากับ card */
+  object-fit: cover; /* ปรับให้รูปเต็มกรอบโดยไม่ผิดสัดส่วน */
+  border-radius: 10px; /* ปรับขอบให้โค้งเหมือนกับ card */
+}
+
+.conference-timer {
+  font-family: 'Poppins';
+  margin-top: 1rem; /* ห่างจากบรรทัดบน 1 บรรทัด */
+  margin-bottom: 1rem; /* ห่างจากบรรทัดล่าง 1 บรรทัด */
+  font-size: 20px; /* ขนาดตัวอักษรที่เหมาะสม */
+  font-weight: bold; /* เน้นตัวหนังสือให้ชัด */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  color: #eeecec; /* ปรับสีให้ชัดขึ้น */
+}
+
+
+

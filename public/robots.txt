@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backend/
+Allow: /
+
+Sitemap: https://icitee2025.it.kmitl.ac.th/sitemap.xml

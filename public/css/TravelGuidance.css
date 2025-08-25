@@ -1,0 +1,10 @@
+/* TravelGuidance.css */
+select.language-select {
+    color: black;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  

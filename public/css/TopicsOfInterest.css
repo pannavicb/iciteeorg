@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #111827;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 20px;
+}
+
+.topics-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topic-row {
+  display: grid;
+  grid-template-columns: 30% 70%; /* แบ่งเป็นสองคอลัมน์: หัวข้อ 30% / รายละเอียด 70% */
+  align-items: start;
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topic-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: #ffffff;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topic-description {
+  font-size: 14px;
+  text-align: left;
+  color: #d1d5db;
+  line-height: 1.6;
+}

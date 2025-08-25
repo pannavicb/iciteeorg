@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.Team-body {
+  font-family: 'Poppins';
+  background-color: #f9fafc; /* Dark Mode */
+  color: #e2e8f0;
+}
+
+.team-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2, h3 {
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th {
+  background: #334155;
+  color: #f8fafc;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #475569;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}

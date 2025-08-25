@@ -1,0 +1,78 @@
+/* Custom CSS for Announcements */
+.announcement-container {
+    background-color: #0D1B2A;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 48rem;
+    margin: auto;
+    width: 90%;
+  }
+  
+  .announcement-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #D1D5DB;
+  }
+  
+  .announcement-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .announcement-item:last-child {
+    border-bottom: none;
+  }
+  
+  .announcement-date {
+    font-size: 1rem;
+    color: #94A3B8;
+  }
+  
+  .announcement-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    color: #F3F4F6;
+  }
+  
+  .announcement-description {
+    font-size: 1rem;
+    color: #CBD5E1;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .announcement-title {
+      font-size: 1.5rem;
+    }
+  
+    .announcement-heading {
+      font-size: 1.125rem;
+    }
+  
+    .announcement-description {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .announcement-container {
+      padding: 1rem;
+    }
+  
+    .announcement-title {
+      font-size: 1.25rem;
+    }
+  
+    .announcement-heading {
+      font-size: 1rem;
+    }
+  
+    .announcement-description {
+      font-size: 0.75rem;
+    }
+  }

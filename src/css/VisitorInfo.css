@@ -1,0 +1,132 @@
+/* VisitorCounter.css */
+
+/* กำหนดให้ container สำหรับ Visitor มีขนาดสูงสุด และการจัดตำแหน่งแบบศูนย์กลาง */
+.visitor-container {
+    max-width: 750px;  
+    /* max-height: 750px;   */
+    /* กำหนดความกว้างสูงสุดของ container */
+    margin: 0 auto;    
+    /* จัดให้อยู่กลาง */
+    /* padding: 1.5rem;    */
+    /* กำหนด padding ภายใน */
+    /* background: linear-gradient(to right, #3b83f61c, #6365f1ce);   */
+    background: linear-gradient(to right, #3b83f618, #8a5cf63a);
+    /* แบ็คกราวด์จากสีน้ำเงิน */
+    border-radius: 0.5rem;  
+    /* มุมมน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    /* เงารอบๆ */
+    /* color: white; */
+}
+
+/* ข้อความหัวข้อหลักของ Visitor */
+.visitor-header {
+    font-family: Poppins;
+    font-size: 14px;  /* ขนาดฟอนต์ที่ปรับ */
+    text-align: center;
+    margin-bottom: 0rem;  /* กำหนดระยะห่างด้านล่างเป็น 0 */
+    border-top: 2px solid #4b556300;  /* เพิ่มขอบบน 2px สีเทา */
+    padding-top: 1rem;  /* เพิ่มช่องว่างด้านบน */
+}
+
+
+/* สำหรับข้อความเมื่อกำลังโหลด Visitor */
+.visitor-loading-text {
+    text-align: center;
+    /* font-size: 1.2rem; */
+    font-size: 14px;
+    /* font-weight: 750; */
+}
+
+/* จัดข้อความจำนวนผู้เข้าชม Visitor */
+.visitor-total-count {
+    /* font-size: 2rem; */
+    font-size: 14px;
+    /* font-weight: 750; */
+    text-align: center;
+    margin-bottom: 0rem;  /* กำหนดระยะห่างด้านล่างเป็น 0 */
+    border-top: 2px solid #4b556300;  /* เพิ่มขอบบน 2px สีเทา */
+    padding-top: 1rem;  /* เพิ่มช่องว่างด้านบน */
+}
+
+/* สไตล์ของกรอบการแสดงข้อมูลสำหรับ Visitor */
+.visitor-card-container {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.26);
+    color: #4b5563;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ข้อความที่แสดงหลังจากโหลดข้อมูล Visitor */
+.visitor-card-container .thank-you-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e4e8ec;
+    /* font-weight: 750; */
+}
+
+/* รูปแบบกริดสำหรับแสดงธงประเทศในสองคอลัมน์ */
+.visitor-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* สองคอลัมน์ */
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+/* รูปแบบแต่ละ card ของประเทศ Visitor */
+.visitor-card {
+    border: 1px solid #d1d5db;  /* ขอบสีเทาอ่อน */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #f3f4f62a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visitor-card img {
+    width: 40px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visitor-card .country-name {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.visitor-card .visitor-count {
+    font-size: 1.2rem;
+    color: #fcfdfd;
+}
+
+/* เมื่อไม่มีข้อมูล Visitor จะแสดงข้อความว่า "ไม่มีข้อมูล" */
+.visitor-no-data {
+    text-align: center;
+    grid-column: span 2;  /* แสดงข้อความบน 2 คอลัมน์ */
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #6b7280;
+}
+
+/* เพิ่มความยืดหยุ่นในกริดสำหรับ Visitor */
+@media (min-width: 640px) {
+    .visitor-grid-container {
+        grid-template-columns: repeat(3, 1fr);  /* สำหรับหน้าจอขนาดกลางจะเพิ่มเป็น 3 คอลัมน์ */
+    }
+}
+
+@media (min-width: 768px) {
+    .visitor-grid-container {
+        grid-template-columns: repeat(5, 1fr);  /* สำหรับหน้าจอใหญ่ขึ้นจะเพิ่มเป็น 5 คอลัมน์ */
+    }
+}
+
+@media (min-width: 1024px) {
+    .visitor-grid-container {
+        grid-template-columns: repeat(10, 1fr);  /* สำหรับหน้าจอขนาดใหญ่จะเพิ่มเป็น 10 คอลัมน์ */
+    }
+}

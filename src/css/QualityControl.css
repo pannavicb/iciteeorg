@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.body {
+  font-family: 'Poppins'; 
+  text-align: justify; 
+  color: #e2e8f0;
+  background-color: #334155;
+  font-size: 14px;
+}
+
+.quality-container {
+  font-family: 'Poppins'; 
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;  
+  color: #f8fafc; 
+}
+
+.title {
+  font-family: 'Poppins'; 
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+  text-align: justify; 
+}
+
+.intro {
+  font-family: 'Poppins'; 
+  text-align: left;
+  font-size: 14px;
+  /* margin-bottom: 40px; */
+  color: #f8fafc; 
+  
+}
+
+.card {
+  /* background: #1e293b; */
+  color: #f8fafc; 
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2, h3 {
+  font-family: 'Poppins'; 
+  color: #f8fafc; 
+  font-size: 16px;
+}
+
+p2 {
+  font-family: 'Poppins'; 
+  color: #f8fafc; 
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th {
+  font-family: 'Poppins'; 
+  background: #334155;
+  color: #f8fafc;
+  
+}
+
+th, td {
+  font-family: 'Poppins'; 
+  font-size: 14px;
+  padding: 12px;
+  border: 1px solid #475569;
+  color: #f8fafc;
+  text-align: justify; 
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #f8fafc;
+  /* text-align: justify;  */
+}
+

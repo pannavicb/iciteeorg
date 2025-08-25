@@ -1,0 +1,1660 @@
+/* front */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body,
+html {
+  font-family: "Poppins";
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+body{
+  background-color: #0c1329 !important;
+}
+h2,
+h3,
+h4 {
+  font-family: "Poppins";
+}
+h2 {
+  
+  margin: 0 0 20px;
+  font-weight: 800;
+  font-size: 36px;
+  color: #333;
+}
+h33 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  font-family: "Poppins";
+}
+h4 {
+  font-size: 15px;
+  /* color: #333; */
+  font-weight: 100;
+}
+h5 {
+  
+  font-weight: 700;
+  line-height: 20px;
+}
+.p-p {
+  font-family: "Poppins";
+  font-size: 14px;
+  /* color: white;
+  text-align : justify; */
+}
+text-xl{
+  font-family: "Poppins";
+  font-size: 14px;
+  color: white;
+}
+.icon {
+  color: #ffffff; /* หรือ white */
+}
+.contact-info p {
+  margin-bottom: 1.5em; /* ปรับค่าตามต้องการ */
+  
+}.address {
+  margin-bottom: 2em; /* ปรับระยะห่างตามต้องการ */
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+a {
+    color: #ffffff;
+    font-weight: 400;
+    word-spacing: 5px;
+  }
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #608dfd;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #1e7a46;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+  align-items: center; /* จัดให้ทุกองค์ประกอบอยู่กึ่งกลาง */
+  gap: 20px; /* ระยะห่างระหว่างไอคอนกับ counter */
+  flex-wrap: wrap; /* ป้องกันการซ้อนกันหากพื้นที่ไม่พอ */
+}
+
+.visitor-counter {
+  /* background: rgba(255, 255, 255, 0.1); */
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+/*Visitor Count*/
+.visitor-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.visitor-counter-box {
+  background-color: rgba(128, 0, 128, 0.1); /* สีม่วงจางๆ */
+  border: 2px solid rgba(128, 0, 128, 0.3); /* เส้นขอบสีม่วง */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  height: 100px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 2px 4px 10px rgba(128, 0, 128, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visitor-icon {
+  font-size: 1vw; /* ขยายขนาดตามความกว้างของหน้าจอหรือกล่อง */
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.visitor-text {
+  font-size: 0.5vw; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  font-weight: 600;
+  color: purple;
+  margin-bottom: 0px;
+}
+
+.visitor-number-date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.visitor-number {
+  font-size: medium; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  font-weight: bold;
+  color: black;
+}
+
+.visitor-date {
+  font-size: 0.5vw; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  color: gray;
+  margin-top: 0px;
+}
+
+/* เพิ่ม Media Queries สำหรับอุปกรณ์ต่างๆ */
+@media (max-width: 768px) {
+  .visitor-counter-box {
+    width: 180px; /* เพิ่มความกว้างเมื่อจอเล็ก */
+    height: auto;
+  }
+
+  .visitor-icon {
+    font-size: 6vw; /* ปรับขนาดให้เหมาะสมกับหน้าจอเล็ก */
+  }
+
+  .visitor-text {
+    font-size: 3vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-number {
+    font-size: 5vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-date {
+    font-size: 2vw; /* ปรับขนาดฟอนต์ */
+  }
+}
+
+@media (max-width: 480px) {
+  .visitor-counter-box {
+    width: 120px; /* ขนาดเล็กลงในหน้าจอมือถือ */
+    height: auto;
+  }
+
+  .visitor-icon {
+    font-size: 8vw; /* เพิ่มขนาดไอคอนในหน้าจอเล็ก */
+  }
+
+  .visitor-text {
+    font-size: 4vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-number {
+    font-size: 6vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-date {
+    font-size: 3vw; /* ปรับขนาดฟอนต์ */
+  }
+}
+
+/* รูปแบบ หัวข้อ บนวิดีโอ */
+.text-highlight2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background: linear-gradient(to bottom, #f7f8fc, #7a5cff); /* Gradient สีม่วง */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-highlight2 span {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f7f8fc, #7a5cff); /* Gradient สีม่วง */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* กำหนดสไตล์ให้เฉพาะ TopicsOfInterest */
+
+.page-topics-background {
+  background-color: #0c1329;
+}
+
+.topics-container {
+  font-family: "Poppins";
+  background-color: #0c1329;
+  color: white;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  padding: 40px 20px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.topics-title {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 20px;
+}
+
+.topics-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topic-row {
+  display: grid;
+  grid-template-columns: 30% 70%; /* แบ่งเป็นสองคอลัมน์: หัวข้อ 30% / รายละเอียด 70% */
+  align-items: start;
+  /* background-color: #1f2937; */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topic-title {
+  font-family: "Poppins";
+  color: #d1d5db;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.topic-description {
+  font-family: "Poppins";
+  font-size: 14px;
+  text-align: left;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .topics-container {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .topic-title {
+    font-size: 14px;
+  }
+
+  .topic-row {
+    grid-template-columns: 1fr; /* สำหรับหน้าจอเล็ก, เปลี่ยนเป็นคอลัมน์เดียว */
+  }
+
+  .topic-title2 {
+    font-size: 20px;
+  }
+
+  .topic-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topics-container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .topic-title {
+    font-size: 20px;
+  }
+
+  .topic-row {
+    grid-template-columns: 1fr; /* คอลัมน์เดียวในหน้าจอเล็กที่สุด */
+  }
+
+  .topics-title2 {
+    font-size: 20px;
+  }
+
+  .topic-description {
+    font-size: 14px;
+  }
+}
+
+/* Styles specific to the Committee page */
+
+/* Background and layout */
+.advisory-boards-container p {
+  width: 20%; /* กำหนดความกว้างให้สมาชิกแต่ละคน */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+.committee-page {
+  font-family: "Poppins";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #1e3a8a, #1e40af); /* Gradient background */
+  color: white;
+}
+
+.committee-container {
+  font-family: "Poppins";
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section Titles */
+.committee-title {
+  font-family: "Poppins";
+  color: #d1d5db;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Spacing */
+.section-spacing {
+  margin-bottom: 2.5rem;
+}
+
+.grid-spacing {
+  row-gap: 1rem;
+}
+
+/* Grid for member lists */
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Text Alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .committee-container {
+    padding: 15px;
+  }
+
+  .committee-title {
+    font-size: 20px;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .committee-title {
+    font-size: 20px;
+  }
+
+  .committee-container {
+    padding: 10px;
+  }
+
+  .section-spacing {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*Button Download*/
+
+.btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  /* background-color: #5ca9fb;
+  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); */
+  background-color: #2D1E5A;
+  background-image: linear-gradient(90deg, #2D1E5A 29%, rgba(95, 63, 192, 0.80) 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  /* border: 0; */
+  border: 1px solid #FFFFFF;
+}
+
+/*Background*/
+.slideshow2 {
+  width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
+  height: 100% !important; /* ใช้เต็มความสูงของ viewport */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideshow2 15s ease-in-out infinite;
+  }
+  
+  @keyframes slideshow2 {
+  15% { background-image: url(../img/intro-bg-3.png); }
+  33% { background-image: url(../img/intro-bg-4.png); }
+  66% { background-image: url(../img/intro-bg-3.png); }
+  100% { background-image: url(../img/intro-bg-4.png);  }
+  }
+
+  /*Background*/
+ .slideshow1 {
+  width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
+  /* height: 100% !important; */ /* ใช้เต็มความสูงของ viewport */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideshow1 100s ease-in-out infinite;
+  }
+  
+  
+  @keyframes slideshow1 {
+  0% { background-image: url(../img/intro-bg-6.png); }
+  33% { background-image: url(../img/intro-bg-6.png); }
+  66% { background-image: url(../img/intro-bg-6.png); }
+  100% { background-image: url(../img/intro-bg-6.png);  }
+  }
+
+  
+/* Navigation */
+#menu {
+  font-family: "Poppins"s;
+  padding: 0px;
+  transition: all 0.8s;
+}
+
+#menu.navbar-default {
+  font-family: "Poppins", Poppins;
+  background-color: #293236;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+#menu a.navbar-brand {
+  font-family: "Poppins", Poppins;
+  font-size: 24px;
+  font-weight: 150;
+  color: #333;
+  
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+  font-family: "Poppins", Poppins;  
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0;
+}
+#menu.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  content: "";
+  transition: width 0.2s;
+}
+#menu.navbar-default .navbar-nav > li > a:hover:after {
+  width: 100%;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:after,
+.navbar-default .navbar-nav > .active > a:hover:after,
+.navbar-default .navbar-nav > .active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  content: "" !important;
+  transition: width 0.2s !important;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  border-color: #608dfd;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #608dfd;
+}
+
+/**/
+/* ปุ่ม Registration */
+.text-registryhighlight span {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f7f8fc, #7a5cff); /* Gradient สีม่วง */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar-button {
+  background: linear-gradient(to right, #4b0082, #7a5cff);
+  color: linear-gradient(to right, #4b0082, #7a5cff);
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar-button:hover {
+  color: linear-gradient(to right, #4b0082, #7a5cff);
+  background: linear-gradient(to right, #7a5cff, #4b0082);
+}
+
+/*   section tile*/
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title p {
+  font-family: poppins;
+  font-size: 16px;
+  color: white;
+}
+.btn-custom {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5F3FC0;
+  background-image: linear-gradient(to right, #5F3FC0 0%, #9174e7 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-image: none;
+  background-color: linear-gradient(to right, #5F3FC0 0%, #9174e7 100%);
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.nav-head{
+  display: flex !important;
+  justify-content: space-between;
+}
+@media (max-width: 1025px) {
+  .nav-head {
+    display: block !important;
+    /* justify-content: flex-end; */
+  }
+  .navbar-header{
+    width: 100%;
+  }
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 1px solid #cccccc04;
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 1px;
+  display: block;
+}
+
+/* .navbar-header{
+  width: 100%;
+} */
+
+/* Logo CSS */
+.right-aligned-text {
+  text-align: right;
+}
+
+.conference-logo {
+  width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
+  max-width: 150px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  text-align: right;
+}
+
+
+.conference-logo2 {
+  width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
+  max-width: 550px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-height: 230px;
+  text-align: center;
+}
+
+.conference-logo3 {
+  width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
+  max-width: 750px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-height: 230px;
+  text-align: center;
+}
+.superscript {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.semi-bold-text {
+  font-style: semi-bold;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.typotitle{
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
+}
+
+.typotitle2{
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
+}
+
+.typotitle3{
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  padding-top: 2px;
+}
+
+/* Header Section */
+.btn-registration {
+  background-color: linear-gradient(to right, #553c9a 0%, #5ca9fb 100%);
+  color: white;
+  border-radius: 5px;
+  padding: 0px 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-registration:hover {
+  background-color: #553c9a;
+}
+
+/* เมนูย่อย Dropdown */
+.navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #293236;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  min-width: 100%; /* ทำให้เมนูย่อยกว้างเท่ากับเมนูหลัก */
+}
+
+.navbar .dropdown:hover .dropdown-menu,
+.navbar .dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: white !important;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffffff;
+  color: #1f2937 !important;
+}
+
+
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* background: #0c1329; */
+  background-image: url(../img/intro-bg-3.png);
+}
+
+.intro h1 {
+  font-family: "Poppins", Poppins;
+  color: #fff;
+  font-size: 82px;
+  font-weight: 700;
+  
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb;
+}
+
+.intro p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+header .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.header-container img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .header-container img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container img {
+    max-width: 200px;
+  }
+}
+
+/* Responsive: บนมือถือหรือจอเล็ก ปรับให้ชิดซ้ายหรือกลาง */
+@media screen and (max-width: 768px) {
+  .custom-center {
+    margin-left: 5%;
+  }
+
+  .typotitle {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+    .typotitle2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+    .typotitle3 {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  .light-text {
+  font-weight: 300;
+}
+
+}
+
+
+/* Features Section */
+#features {
+  background: #0c1329;;
+}
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+/**/
+/* Container for About the Conference */
+.about-container {
+  display: flex;  /* ใช้ Flexbox เพื่อจัดวางสองคอลัมน์ */
+  align-items: flex-start; /* จัดให้อยู่ด้านบนของคอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+  max-width: 0 auto; /* จำกัดความกว้าง */
+  margin: 20px auto; /* จัดให้อยู่ตรงกลางของหน้า */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left column (Title) */
+.about-title {
+  font-family: "Poppins";
+  width: 30%; /* กำหนดความกว้างของหัวข้อ */
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f7f4f4;
+  text-align: center; /* จัดชิดซ้าย */
+  line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+}
+
+/* Left column (Title) */
+.about-title2 {
+  font-family: "Poppins";
+  width: 30%; /* กำหนดความกว้างของหัวข้อ */
+  font-size: 1em;
+  font-weight: bold;
+  color: #f7f4f4;
+  text-align: left; /* จัดชิดซ้าย */
+  line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+}
+
+/* Right column (Details) */
+.about-details {
+  font-family: "Poppins";
+  width: 100%; /* กำหนดความกว้างของเนื้อหา */
+  font-size: 1.8em;
+  color: #f7f4f4;
+  text-align: justify; /* จัดเนื้อหาให้เป็นระเบียบ */
+  line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+}
+
+/* Container for Important Dates */
+.important-dates-container {
+  display: flex;  /* ใช้ Flexbox จัดสองคอลัมน์ */
+  align-items: flex-start; /* จัดให้อยู่ด้านบน */
+  gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+  max-width: 800px; /* จำกัดความกว้าง */
+  margin: 20px auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+  font-family: 'poppins';
+}
+
+/* Left column (Title) */
+.important-dates-title {
+  font-family: "Poppins";
+  width: 30%; /* กำหนดความกว้างของหัวข้อ */
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #faf8f8;
+  text-align: left; /* จัดชิดซ้าย */
+}
+
+/* Right column (Table) */
+.important-dates-table {
+  width: 70%; /* กำหนดความกว้างของตาราง */
+  border-collapse: collapse; /* รวมเส้นขอบของตาราง */
+}
+
+/* Table Header */
+.important-dates-table th {
+  font-family: "Poppins";
+  background-color: #007bff00;  /* พื้นหลังสีน้ำเงิน */
+  color: white;  /* ตัวหนังสือสีขาว */
+  padding: 12px;  /* ระยะห่างของตัวอักษร */
+  text-align: left;
+}
+
+/* Table Cells */
+.important-dates-table td {
+  font-family: "Poppins";
+  font-size: 0.8em;
+  background-color: #f9f9f900; /* สีพื้นหลังของตาราง */
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* เส้นแบ่งระหว่างแถว */
+}
+
+/* Table Hover Effect */
+.important-dates-table tr:hover {
+  background-color: #f1f1f14b;
+}
+
+
+/**/
+
+/* About Section */
+.about-us-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.row {  
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ทำให้ทั้งสองคอลัมน์อยู่ในแนวตั้งเดียวกัน */
+}
+
+.column {
+
+  flex: 1;
+}
+
+.column h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.column p {
+  font-size: 16px;
+  color:#ffffff;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start; /* จัดให้อยู่ตรงตามแนวเดียวกันในแนวตั้ง */
+}
+
+.important-dates {
+  font-family: "Poppins";
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.important-dates th, .important-dates td {
+  font-family: "Poppins";
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #ffffff; /* ปรับเป็นสีขาว */
+}
+
+.important-dates th {
+  font-weight: bold;
+  
+}
+
+.light-text {
+  font-family: "Poppins";
+  padding: 12px;
+  font-size: 18px !important;
+  border-collapse: collapse;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.light-text1 {
+  font-family: "Poppins";
+  padding: 12px;
+  font-size: 15px; 
+  border-collapse: collapse;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.important-dates tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.important-dates td:first-child {
+  width: 40%; /* ปรับขนาดของคอลัมน์ DATE */
+}
+
+.important-dates td {
+  padding: 10px 0;
+}
+
+
+/**/
+#about {
+  padding: 100px 0;
+  background: #0c1329;
+}
+
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#about h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5ca9fb;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#about img {
+  width: 520px;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+
+.submenu-parent {
+  position: relative;
+}
+
+.submenu-parent > a::after {
+  content: ' ';
+  float: right;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 250px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #293236;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  white-space: normal;
+}
+
+.submenu-parent:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.submenu li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Services Section */
+#services {
+  padding: 100px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  color: #fff;
+}
+#services .service-desc {
+  margin: 10px 10px 20px;
+}
+#services h2 {
+  color: #fff;
+}
+#services .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#services i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#services h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#services p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#services .service-desc {
+  margin-bottom: 40px;
+}
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0;
+}
+.portfolio-item {
+  margin: 1px -15px 0 -14px;
+  padding: 0;
+}
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(99, 114, 255, 0.8) 0%,
+    rgba(92, 169, 251, 0.8) 100%
+  );
+  padding: 30% 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  
+}
+.hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+#testimonials2 {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials2 i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial2 {
+  position: relative;
+  padding: 20px;
+}
+#testimonials3 {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials3 i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+/* Team Section */
+#team1 {
+  padding: 100px 0;
+}
+#team1 h4 {
+  margin: 5px 0;
+}
+#team1 .team-img {
+  width: 240px;
+}
+#team1 .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#team1 .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+/* Contact Section  */
+#contact {
+  font-family : poppins;
+  padding: 50px 0 10px;
+  background: #0c1329;
+  color: rgba(255, 255, 255, 0.75);
+}
+#contact .section-title {
+  margin-bottom: 40px;
+}
+#contact .section-title p {
+  font-size: 20px;
+}
+#contact h2 {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+
+#contact .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 0px;
+  bottom: 0;
+  /* left: 30px; */
+}
+#contact h3 {
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+#contact form {
+  padding-top: 20px;
+}
+#contact .text-danger {
+  color: #cc0033;
+  text-align: left;
+}
+#contact .btn-custom {
+  font-family : poppins;
+  margin: 30px 0;
+  background: transparent;
+  border: 2px solid #fff;
+}
+#contact .btn-custom:hover {
+  color: #1f386e;
+  background: #fff;
+}
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  float: left;
+}
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#contact .form-control:focus {
+  border-color: #999;
+  outline: 0;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+}
+.form-control::-webkit-input-placeholder {
+  color: #777;
+}
+.form-control:-moz-placeholder {
+  color: #777;
+}
+.form-control::-moz-placeholder {
+  color: #777;
+}
+.form-control:-ms-input-placeholder {
+  color: #777;
+}
+#contact .contact-item {
+  margin: 20px 0;
+}
+#contact .contact-item span {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+  display: block;
+}
+#contact .contact-item i.fa {
+  margin-right: 10px;
+}
+#contact .social {
+  width: 1220px;
+  height: 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+#contact .social i.fa {
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  padding: 12px 0;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#contact .social i.fa:hover {
+  color: #608dfd;
+  background: #fff;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fullscreen Slideshow */
+
+.slideshow-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fade 12s infinite;
+  background: #0c1329;
+}
+
+/* Images */
+.slideshow-bg:nth-child(1) {
+  background-image: url('img/image1.jpg');
+  animation-delay: 0s;
+}
+.slideshow-bg:nth-child(2) {
+  background-image: url('img/image2.jpg');
+  animation-delay: 4s;
+}
+.slideshow-bg:nth-child(3) {
+  background-image: url('img/image3.jpg');
+  animation-delay: 8s;
+}
+
+/* Fade Animation */
+@keyframes fade {
+  0% { opacity: 0; }
+  33% { opacity: 1; }
+  66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Footer Section*/
+#footer {
+  background: #f6f6f6;
+  padding: 30px 0;
+}
+#footer p {
+  color: #888;
+  font-size: 14px;
+}
+#footer a {
+  color: #608dfd;
+}
+#footer a:hover {
+  border-bottom: 2px solid #608dfd;
+}
+
+/* Organizer Cards */
+
+@media (max-width: 768px) {
+  #about img {
+    margin: 50px 0;
+  }
+}
+
+/* Container สำหรับการจัดตำแหน่ง */
+.center-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  transition:background-color 0.3s ease;
+  text-align: center;
+}
+/* สไตล์สำหรับหัวข้อ (จำนวนผู้เข้าชม) */
+.visitor-counter h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  transition:background-color 0.3s ease;
+  max-width: fit-content;
+}
+
+* สไตล์สำหรับ Visitor Counter */
+.visitor-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #ffffff30; */
+  /* border-radius: 1.5rem; */
+  /* padding: 0rem; */
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); */
+  /* text-align: justify; */
+}
+
+/* สไตล์สำหรับหัวข้อ (จำนวนผู้เข้าชม) */
+.visitor-counter h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0rem;
+  transition:background-color 0.3s ease;
+}
+
+/* สไตล์สำหรับปุ่ม */
+.visitor-counter button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visitor-counter button:hover {
+  background-color: #2563eb;
+}
+
+/* ทำให้รองรับการแสดงผลบนอุปกรณ์ต่าง ๆ */
+
+/* สำหรับอุปกรณ์ขนาด iPad (Tablet) */
+@media (max-width: 1024px) {
+  .visitor-counter h1 {
+    font-size: 1.5rem;
+  }
+
+  .visitor-counter button {
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+/* สำหรับอุปกรณ์ขนาดมือถือ */
+@media (max-width: 768px) {
+  .visitor-counter h1 {
+    font-size: 1.25rem;
+  }
+
+  .visitor-counter button {
+    padding: 0.5rem 1rem;
+  }
+}
