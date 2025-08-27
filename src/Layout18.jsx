@@ -1,11 +1,11 @@
 // ใน Layout2.jsx
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Headersub from "./components/headersub17"; // แก้ไขการนำเข้าให้ตรง
+import Headersub from "./components/headersub18"; // แก้ไขการนำเข้าให้ตรง
 import { Navigation } from "./components/navigation"; // นำเข้า Navigation
 import { Footer } from "components/Footer";
 
-const Layout17 = ({ data }) => { // รับข้อมูลจาก props
+const Layout18 = ({ data }) => { // รับข้อมูลจาก props
   return (
     <div>
       {/* แสดง Header */}
@@ -23,4 +23,4 @@ const Layout17 = ({ data }) => { // รับข้อมูลจาก props
   );
 };
 
-export default Layout17;
+export default Layout18;

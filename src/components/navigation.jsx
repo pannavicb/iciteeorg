@@ -91,7 +91,8 @@ export const Navigation = () => {
                 <ul className="dropdown-menu">                 
                   <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>      
                   <li><a href="/paper-submission-guidelines" className="page-scroll">Paper Submission Guidelines</a></li>  
-                  <li><a href="/registration" className="page-scroll">Registration</a></li>       
+                  <li><a href="/registration" className="page-scroll">Registration</a></li>     
+                  <li><a href="/paper-review" className="page-scroll">Paper Reviews</a></li>  
                 </ul>
               )}
             </li>

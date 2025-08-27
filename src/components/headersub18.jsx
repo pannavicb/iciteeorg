@@ -17,7 +17,7 @@ const HeaderSub18 = () => {
               <div className="col-md-8 col-md-offset-0.5 intro-text">
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
-                  <p><div class="typotitle2"> Biomedical signal processing and bio-medical big data analysis </div></p>
+                  <p><div class="typotitle2"> Paper Reviews </div></p>
                 </h1>
                 <p><div class="typotitle2"></div></p>
                 <div className="conference-timer"></div>
