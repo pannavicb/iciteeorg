@@ -17,6 +17,7 @@ import Layout14 from "./Layout14";
 import Layout15 from "./Layout15";
 import Layout16 from "./Layout16";
 import Layout17 from "./Layout17";
+import Layout18 from "./Layout18";
 
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
