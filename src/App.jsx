@@ -41,6 +41,7 @@ import TravelGuidance from "./components/TravelGuidance";
 import KeynoteSpeaker from "./components/KeynoteSpeaker";
 import KeynoteSpeaker2 from "./components/KeynoteSpeaker2";
 import KeynoteSpeaker3 from "./components/KeynoteSpeaker3";
+import TopicsOfInterestReview from "./components/TopicsOfInterestReview";
 
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
@@ -163,6 +164,9 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={< KeynoteSpeaker3 data={landingPageData.Gallery} />} />
         </Route> 
 
+        <Route path="/paper-review" element={<Layout18 data={landingPageData} />}>
+          <Route index element={< TopicsOfInterestReview data={landingPageData.Gallery} />} />
+        </Route>
 
       </Routes>
 
