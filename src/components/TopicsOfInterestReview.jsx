@@ -52,31 +52,7 @@ const ResearchList = () => {
         }
       }
     },
-    {
-      title: "Blockchain for Healthcare",
-      detail: {
-        abstract: {
-          th: "การนำบล็อกเชนมาใช้เพื่อเพิ่มความปลอดภัย ความโปร่งใส และประสิทธิภาพในการจัดเก็บข้อมูลสุขภาพ",
-          en: "This study applies blockchain to enhance security, transparency, and efficiency in healthcare data management."
-        },
-        objective: {
-          th: "เพื่อสร้างระบบการจัดเก็บและแลกเปลี่ยนข้อมูลสุขภาพที่ปลอดภัยและเชื่อถือได้",
-          en: "To establish a secure and reliable system for storing and exchanging healthcare data."
-        },
-        methodology: {
-          th: "ใช้ Smart Contract และระบบเข้ารหัสข้อมูลเพื่อจัดการสิทธิ์การเข้าถึงของผู้ป่วยและแพทย์",
-          en: "Smart contracts and encryption techniques were used to manage access rights of patients and medical staff."
-        },
-        results: {
-          th: "ลดความเสี่ยงข้อมูลรั่วไหลลงกว่า 40% และเพิ่มความน่าเชื่อถือในการใช้งานของโรงพยาบาล",
-          en: "Data leakage risk was reduced by over 40%, increasing hospitals’ trust and usability."
-        },
-        conclusion: {
-          th: "Blockchain สามารถช่วยยกระดับระบบสาธารณสุขด้วยความปลอดภัยและความโปร่งใส",
-          en: "Blockchain can significantly improve healthcare systems with enhanced security and transparency."
-        }
-      }
-    }
+    // ... (เพิ่มเรื่องอื่นๆ ตามที่คุณเตรียมไว้ได้เลย)
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -85,35 +61,37 @@ const ResearchList = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const bgColors = ["bg-blue-50", "bg-green-50", "bg-yellow-50", "bg-pink-50", "bg-purple-50"];
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className="w-full max-w-3xl">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">    
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-6">
+      <div className="w-full max-w-4xl">
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">
         </h2>
 
-        <div className="space-y-3">
+        <div className="space-y-6">
           {researches.map((item, index) => (
             <div
               key={index}
-              className="border rounded-xl shadow p-5 bg-white transition duration-200 hover:shadow-md"
+              className={`${bgColors[index % bgColors.length]} border rounded-2xl shadow-lg p-6 transition duration-200 hover:shadow-xl`}
             >
               {/* หัวข้อ */}
               <div
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleDetail(index)}
               >
-                <span className="font-semibold text-xl">{item.title}</span>
-                <span className="text-2xl font-bold">
+                <span className="font-semibold text-xl text-gray-800">{item.title}</span>
+                <span className="text-2xl font-bold text-gray-600">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </div>
 
-              {/* รายละเอียดแบบวิจัยทางการ */}
+              {/* รายละเอียด */}
               {openIndex === index && (
-                <div className="mt-4 text-gray-800 leading-relaxed space-y-3">
+                <div className="mt-5 text-gray-800 leading-relaxed space-y-4 bg-white p-5 rounded-xl shadow-inner">
                   {Object.entries(item.detail).map(([section, content], i) => (
-                    <div key={i}>
-                      <p className="font-bold capitalize">
+                    <div key={i} className="border-b pb-3">
+                      <p className="font-bold capitalize text-gray-900">
                         {section === "abstract"
                           ? "Abstract / บทคัดย่อ"
                           : section === "objective"
@@ -124,8 +102,8 @@ const ResearchList = () => {
                           ? "Results / ผลลัพธ์"
                           : "Conclusion / สรุป"}
                       </p>
-                      <p className="text-gray-700">🇹🇭 {content.th}</p>
-                      <p className="italic text-gray-600">🇬🇧 {content.en}</p>
+                      <p className="text-gray-700"> {content.th}</p>
+                      <p className="italic text-gray-600"> {content.en}</p>
                     </div>
                   ))}
                 </div>
@@ -133,8 +111,8 @@ const ResearchList = () => {
             </div>
           ))}
         </div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">    
-        </h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">
+        </h2>        
       </div>
     </div>
   );
