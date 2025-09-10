@@ -8,7 +8,7 @@ const app = express(); // <== ต้องมีตรงนี้
 const PORT = 5000; // หรือจะตั้งเป็นค่าที่ต้องการ
 
 // ตั้งค่า multer ให้เก็บไฟล์อัปโหลด
-const upload = multer({ dest: "backend2/uploads/" });
+const upload = multer({ dest: "uploads/" });
 
 // API: อัปโหลด CSV และแปลงเป็น JSON
 app.post("/api/import-csv", upload.single("file"), (req, res) => {
