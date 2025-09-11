@@ -4,8 +4,11 @@ const fs = require("fs");
 const path = require("path");
 const multer = require("multer");
 
-const app = express(); // <== ต้องมีตรงนี้
-const PORT = 5000; // หรือจะตั้งเป็นค่าที่ต้องการ
+const app = express();
+const PORT = 5000;
+
+// เสิร์ฟไฟล์ static (เช่น index.html)
+app.use(express.static(__dirname));
 
 // ตั้งค่า multer ให้เก็บไฟล์อัปโหลด
 const upload = multer({ dest: "uploads/" });
